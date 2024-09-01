@@ -1,11 +1,16 @@
+<script>
+    
+</script>
+
 <style lang="css">
     :global(body) {
-        background-color: rgb(18, 18, 18);
+        background-color: black;
         color: white;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 0%;
         margin: 0%;
-    }
+
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }  
 
     :global(a) {
         color: white;
@@ -17,7 +22,7 @@
         flex-direction: row;
 
         border-bottom: 1px solid;
-        border-color: white;
+        border-color: gray;
 
         padding-inline: 3rem;
         padding-block: 2rem;
@@ -27,7 +32,6 @@
     }
 
     .nav-element {
-        border-radius: 0.3rem;
         text-decoration: none;
         margin-inline: 1rem;
     }
@@ -35,6 +39,7 @@
 
 
 <nav>
+    <a class="nav-element home-element" href="/">skolenytt</a>
     <a class="nav-element" href="/nyheter">Nyheter</a>
     <a class="nav-element" href="/omOss">Om oss</a>
 </nav>
