@@ -23,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.45.3",
+		"reading-time-estimator": "^1.11.0",
 		"svelte-markdown": "^0.4.1"
 	}
 }

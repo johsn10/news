@@ -13,7 +13,7 @@
     }  
 
     :global(a) {
-        color: white;
+        color: rgb(210, 210, 210);
         font-weight: bold;
     }
 

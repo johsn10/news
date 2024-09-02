@@ -6,4 +6,5 @@ export interface ArticleProps {
     createdAt: string,
     id: string,
     author: string,
+    imageUrl: string,
 };

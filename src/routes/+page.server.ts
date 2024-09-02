@@ -11,6 +11,8 @@ export const load: PageServerLoad = async (): Promise<PageData> => {
         console.log("error: ", response.error);
         return { articles: [] };
     }
+
+    let imagesUrl = "https://wibelkkoojtxnxwhxoea.supabase.co/storage/v1/object/public/images/";
     
     articles = response.data.map((record) => {
         return <ArticleProps> {
@@ -19,6 +21,7 @@ export const load: PageServerLoad = async (): Promise<PageData> => {
             title: record.title,
             body: record.body,
             id: record.id,
+            imageUrl: imagesUrl+record.id+".avif",
         };
     })
     return { articles };
