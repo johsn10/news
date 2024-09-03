@@ -13,16 +13,13 @@
     }  
 
     :global(a) {
-        color: rgb(210, 210, 210);
+        color: white;
         font-weight: bold;
     }
 
     nav {
         display: flex;
         flex-direction: row;
-
-        border-bottom: 1px solid;
-        border-color: gray;
 
         padding-inline: 3rem;
         padding-block: 2rem;

@@ -3,6 +3,7 @@ import { supabase } from "$lib/supabaseClient";
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 import type { PageData } from "./$types";
+import { getImageUrl } from "$lib/utils";
 
 export const load: PageServerLoad = async ({ params }): Promise<PageData> => {
     const response = await supabase.from("articles").select().eq("id", params.id);
@@ -24,6 +25,7 @@ export const load: PageServerLoad = async ({ params }): Promise<PageData> => {
         title: record.title,
         body: record.body,
         id: record.id,
+        imageUrl: getImageUrl(record.id),
     };
     
     return { article };
